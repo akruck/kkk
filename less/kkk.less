@@ -1,0 +1,176 @@
+﻿@charset "utf-8";
+/* Colors */
+@kkk-fresh-green: #519014; /* HKS 60N / HKS 60K */
+@kkk-paper-white: #FBFBF9;
+@kkk-light-warm-grey: #EAE9E3;
+@kkk-warm-grey: #D3D2C5;
+@kkk-warm-grey-text: #8a8768;
+@kkk-dark-warm-grey: #2D2C22;
+@kkk-error: #DD2C24;
+
+/* small Reset */
+html { margin: 0; padding: 0; }
+a { cursor: pointer; color: @kkk-fresh-green; }
+a:link { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Shadows */
+@kkk-shadow-warm-grey: 0 2px 8px @kkk-warm-grey; 
+.kkk-shadow-warm-grey { 
+	-moz-box-shadow: @kkk-shadow-warm-grey; 
+	-webkit-box-shadow: @kkk-shadow-warm-grey; 
+	box-shadow: @kkk-shadow-warm-grey; 
+}
+
+/* Top Head */
+.kkk-bg-top-head { 
+	background: @kkk-warm-grey url(../img/bg-top-head-shadow.png) repeat-x left bottom; 
+	height: 32px; 
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	right: 0; 
+}
+
+.kkk-main-content { background-color: white; padding-bottom: 32px; }
+
+.kkk-navigation-head { position: absolute; right: 0; padding: 0 8px; font-size: 11px; }
+.kkk-navigation-head .nav-pills > li > a { border-radius: 0; margin-top: 0; padding-bottom: 9px; }
+.kkk-navigation-head,
+.kkk-navigation-head a { color: @kkk-dark-warm-grey; }
+.kkk-navigation-head a:hover { color: @kkk-warm-grey-text; }
+
+.kkk-navbar-top { padding-left: 32px; }
+
+.kkk-highlight-color { color: @kkk-fresh-green; }
+
+/* Logo */
+.kkk-logo-head { position: relative; }
+.kkk-logo-small-clip { 
+	background: url(../img/bg-top-clip-corner-left.png) no-repeat left bottom; 
+	width: 8px; 
+	height: 12px;
+	position: absolute;
+	left: -8px;
+	top: 20px; 
+}
+.kkk-logo-head-clip { 
+	background: url(../img/bg-top-clip.png) repeat-x left bottom @kkk-light-warm-grey;
+	height: 80px;
+	width: 64px;
+	position: absolute;
+	top: 20px;
+	vertical-align: bottom;
+	.kkk-shadow-warm-grey; }
+.kkk-logo-clip-text { font-size: 20px; color: @kkk-dark-warm-grey; letter-spacing: 3px; position: absolute; bottom: 8px; left: 6px; }
+.kkk-logo-label-head { position: absolute; top: 76px; left: 72px; color: @kkk-dark-warm-grey; }
+.kkk-logo-label-text { font-size: 20px; white-space: nowrap; padding-left: 1px; }
+.kkk-claim-head { color: @kkk-warm-grey-text; position: absolute; margin: 6px 0 0 2px; white-space: nowrap; letter-spacing: 1px; }/*
+
+/* Navigation */
+.navbar .nav .kkk-active > .dropdown-toggle { background-color: @kkk-fresh-green; }
+
+/* Content */
+.kkk-content-background { background-color: white; padding: 0 16px 32px 16px; }
+.kkk-content {margin-top: 148px; }
+
+/* input */
+.kkk-input-fullwidth { padding-right: 9px; }
+.kkk-input-fullwidth > input,
+.kkk-input-fullwidth > textarea { width: 100%; }
+textarea.kkk-textarea { height: 160px; }
+
+.kkk-Kontakt-Info-Platzhalter { display:inline-block; width:52px; }
+
+/* Footer */
+.kkk-footer-partner { background-color: @kkk-warm-grey; padding: 16px; }
+.kkk-footer-partner h1 { color: @kkk-light-warm-grey; }
+
+/* Images */
+.kkk-image { display: block; overflow: hidden; }
+.kkk-teaser-image-full { 
+	height: 240px; 
+	background: url(../img/Titel-Klink-Erwin-Stender-vor-Filiale-Luenen-01.jpg) no-repeat left bottom @kkk-warm-grey; }
+.kkk-container-bank-partner { 
+	height: 200px; 
+	cursor: pointer; 
+	text-align: center; 
+	margin-top: 0; 
+}
+.kkk-container-bank-partner:hover { 
+	background-color: @kkk-light-warm-grey; 
+}
+
+/* Logos */
+.kkk-image-bank-partner { height: 200px; background-position: center top; background-repeat: no-repeat; }
+
+.kkk-logo-dsl-bank { background-image: url(../img/logo-dsl-bank-sw.png); }
+.kkk-container-bank-partner:hover .kkk-logo-dsl-bank { background-image: url(../img/logo-dsl-bank.png); }
+
+.kkk-logo-psd-bank { background-image: url(../img/logo-psd-bank-sw.png); }
+.kkk-logo-psd-bank-bg:hover { background-color: #019966; }
+.kkk-container-bank-partner:hover .kkk-logo-psd-bank { background-image: url(../img/logo-psd-bank.png); }
+
+.kkk-logo-west-immob-bank { background-image: url(../img/logo-west-immob-bank-sw.png); }
+.kkk-container-bank-partner:hover .kkk-logo-west-immob-bank { background-image: url(../img/logo-west-immob-bank.png); }
+
+.kkk-logo-kfw-bank { background-image: url(../img/logo-kfw-bank-sw.png); }
+.kkk-container-bank-partner:hover .kkk-logo-kfw-bank { background-image: url(../img/logo-kfw-bank.png); }
+
+.kkk-logo-dkb-bank { background-image: url(../img/logo-dkb-bank-sw.png); }
+.kkk-container-bank-partner:hover .kkk-logo-dkb-bank { background-image: url(../img/logo-dkb-bank.png); }
+
+.kkk-logo-ing-diba-bank { background-image: url(../img/logo-ing-diba-bank-sw.png); }
+.kkk-container-bank-partner:hover .kkk-logo-ing-diba-bank { background-image: url(../img/logo-ing-diba-bank.png); }
+
+.kkk-logo-top-immo-bank { background-image: url(../img/logo-top-immo-bank-sw.png); }
+.kkk-container-bank-partner:hover .kkk-logo-top-immo-bank { background-image: url(../img/logo-top-immo-bank.png); }
+
+.kkk-logo-nibc-bank { background-image: url(../img/logo-nibc-bank-sw.png); }
+.kkk-container-bank-partner:hover .kkk-logo-nibc-bank { background-image: url(../img/logo-nibc-bank.png); }
+
+.kkk-logo-bhw-bank { background-image: url(../img/logo-bhw-bank-sw.png); }
+.kkk-logo-bhw-bank-bg:hover { background-color: #FFCC00; }
+.kkk-container-bank-partner:hover .kkk-logo-bhw-bank { background-image: url(../img/logo-bhw-bank.png); }
+
+.kkk-logo-hanseatic-bank { background-image: url(../img/logo-hanseatic-bank-sw.png); }
+.kkk-container-bank-partner:hover .kkk-logo-hanseatic-bank { background-image: url(../img/logo-hanseatic-bank.png); }
+
+.kkk-logo-bbv-bank { background-image: url(../img/logo-bbv-bank-sw.png); }
+.kkk-container-bank-partner:hover .kkk-logo-bbv-bank { background-image: url(../img/logo-bbv-bank.png); }
+
+/* Bilder Mitarbeiter */
+.kkk-image-contributor { 
+	height: 240px; 
+	background-color: @kkk-warm-grey; 
+	margin-bottom: 24px;
+	background-repeat: no-repeat;
+	background-position: right top; 
+}
+.kkk-group-image-full { background-image: url(../img/Gruppe-Klink-Erwin-Stender-01.jpg); }
+.kkk-imageCKlink { background-image: url(../img/Portrait-Karsten-Klink-01.jpg); }
+.kkk-imageDErwin { background-image: url(../img/Portrait-Dirk-Erwin-01.jpg); }
+.kkk-imageGStender { background-image: url(../img/Portrait-Gudrun-Stender-01.jpg); }
+
+/* Bilder Dekoration */
+.kkk-image-deco { background-color: @kkk-warm-grey; padding: 16px 0; text-align: center; }
+
+/* Form styles */
+.kkk-input-item { position: relative; }
+.kkk-input-item label.error { 
+	color: @kkk-error; 
+	padding: 4px 8px; 
+	border: 1px solid @kkk-error; 
+	position: absolute; 
+	left: 228px; 
+	top: 23px;
+}
+.kkk-input-item-big label.error { 
+	color: @kkk-error; 
+	padding: 4px 8px; 
+	border: 1px solid @kkk-error;
+	display: block;	
+}
+
+/* ie7 Hacks */
+* +html .kkk-logo-clip-text { top: 50px; line-height: 24px; }
